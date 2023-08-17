@@ -7,6 +7,11 @@ Bootstrap(app)
 app.secret_key = 'asdjn4239dasdm2354HTGSDF4564'
 
 
+@app.route("/")
+def init():
+    return render_template('login.html')
+
+
 #REDIRECIONAMENTO PÓS TENTATIVA DE LOGIN
 @app.route("/index.html")
 def index():
